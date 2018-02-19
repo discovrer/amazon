@@ -10,6 +10,7 @@
    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 <context:component-scan base-package="org.amazon.amazonshopping.controller"></context:component-scan>
+<context:component-scan base-package="org.amazon.amazonbackend.daoimpl"></context:component-scan>
 
 <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/views/" />
@@ -20,7 +21,5 @@
 <mvc:annotation-driven />
 
 <mvc:resources location="/assets/" mapping="/resources/**" />
-
-
 
 </beans>
